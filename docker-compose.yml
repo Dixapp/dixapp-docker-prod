@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+     - "8000:8080"
+  mongo:
+    build: ./mongodocker
+    ports:
+     - "27017:27017"
